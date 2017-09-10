@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/experiments/speed-snake/</loc>
+    <lastmod>2017-09-10T00:04:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-09-08T08:01:33-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/experiments/</loc>
+    <lastmod>2017-09-08T07:54:32-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2017-09-08T07:54:32-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/litsmart/</loc>
+    <lastmod>2017-06-09T09:55:32-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/initiative/</loc>
+    <lastmod>2017-04-09T19:53:36-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/experiments/react-scoreboard/</loc>
+    <lastmod>2017-03-16T00:04:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/digital-continuum/</loc>
+    <lastmod>2016-11-09T23:46:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/adobe/</loc>
+    <lastmod>2017-04-09T19:53:36-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/css3/</loc>
+    <lastmod>2017-06-09T09:55:32-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/drupal/</loc>
+    <lastmod>2017-06-09T09:55:32-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2017-09-10T00:04:18-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript-react/</loc>
+    <lastmod>2017-03-16T00:04:18-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/netlify/</loc>
+    <lastmod>2016-11-09T23:46:08-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sass/</loc>
+    <lastmod>2016-11-09T23:46:08-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sketch/</loc>
+    <lastmod>2017-04-09T19:53:36-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-04-09T19:53:36-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,72 @@
+.navbar-end {
+  @include tablet {
+    display: flex;
+    margin-left: auto;
+
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+}
+.navbar-item {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.5rem 0 0.5rem;
+
+  @include tablet {
+    margin: 0 1rem 0 0;
+  }
+  @include desktop {
+    display: flex;
+  }
+  &:before, &:after {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    margin-top: -1px;
+    content: "";
+    transition: all 0.2s ease;
+    opacity: 0;
+    background-color: $gray300;
+
+    @include desktop {
+      margin-top: 0;
+    }
+  }
+  &:before {
+    left: 50%;
+  }
+  &:after {
+    right: 50%;
+  }
+  &:not(.active) {
+    &:hover {
+      &:before, &:after {
+        background: $gray600;
+      }
+    }
+  }
+  &.active, &:hover {
+    &:before {
+      left: 0;
+      width: 50%;
+      opacity: 1;
+    }
+    &:after {
+      right: 0;
+      width: 50%;
+      opacity: 1;
+    }
+  }
+}
+a {
+  font-size: 18px;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  letter-spacing: 1.5px;
+
+  font-color: $white;
+}

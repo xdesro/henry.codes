@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "Futura";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("/fonts/futura/3482C8_0_0.eot");
+  src: url("/fonts/futura/3482C8_0_0.eot?#iefix") format("embedded-opentype"),
+  url("/fonts/futura/3482C8_0_0.woff2") format("woff2"),
+  url("/fonts/futura/3482C8_0_0.woff") format("woff"),
+  url("/fonts/futura/3482C8_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "icomoon";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("/fonts/icons/icomoon.eot");
+  src: url("/fonts/icons/icomoon.eot") format("embedded-opentype"),
+  url("/fonts/icons/icomoon.ttf") format("truetype"),
+  url("/fonts/icons/icomoon.woff") format("woff"),
+  url("/fonts/icons/icomoon.svg") format("svg");
+}
+
+// Font Family
+$font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+$iconfont: "icomoon";
+$header-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+
+// Paragraph Styles
+$paragraph-color: $white;
+$light-theme-paragraph-color: $gray300;
+$paragraph-size: rem(18px);
+$paragraph-line-height: 1.5em;
+$paragraph-margin: rem(20px);
+
+// Header Styles
+$header-color: $white;
+$light-theme-header-color: $gray100;
+$header-size: rem(40px);
+$header-line-height: 1.25em;
+$header-margin: $paragraph-margin * 1.2;
+
+// Blockquote Styles
+$blockquote-color: #505050;
+$blockquote-size: rem(23px);
+$blockquote-line-height: 1.5em;
+$blockquote-margin: $paragraph-margin * 1.5;
+
+// Links
+$link-color: $white;
+$light-theme-link-color: $gray300;
+
+// hr
+$hr-margin: 30px;
+
+// Type Misc
+$font-weight-bold: 800;
+$border-color: #DADADA;
+
+
+/*------------------------------------*\
+    # Type
+\*------------------------------------*/
+
+// Make type normal across browsers
+*, html, body {
+  font-family: $font-family;
+  font-size: $base-font-size;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-family;
+  font-weight: 400;
+  font-style: normal;
+  line-height: $header-line-height;
+  margin: $header-margin * 1.5 0 $header-margin 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $header-color;
+  main.light & {
+    color: $light-theme-header-color;
+  }
+}
+
+h1 {
+  font-size: $header-size;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  // font-size: $header-size / 1.3;/* DIGITAL CONTINUUM: */
+  font-size: 34px;
+
+  @include mobile {
+    font-size: $header-size / 1.5;
+  }
+}
+
+h3 {
+  font-size: $header-size / 1.5;
+
+  @include mobile {
+    font-size: $header-size / 1.7;
+  }
+}
+
+h4 {
+  font-size: $header-size / 1.7;
+
+  @include mobile {
+    font-size: $header-size / 1.8;
+  }
+}
+
+h5 {
+  font-size: $header-size / 1.8;
+
+  @include mobile {
+    font-size: $header-size / 2;
+  }
+}
+
+h6 {
+  font-size: $header-size / 2;
+}
+
+small {
+  font-size: $paragraph-size;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+
+// Paragraphs
+p {
+  font-size: $paragraph-size;
+  font-style: italic;
+  line-height: $paragraph-line-height;
+  margin-top: $paragraph-margin;
+  color: $paragraph-color;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+  main.light & {
+    color: $light-theme-paragraph-color;
+  }
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: $link-color;
+
+  @include transition(all 0.2s ease);
+
+  &:hover {
+    color: darken($link-color, 10%);
+  }
+  main.light p &, main.light p & &:visited {
+    text-decoration: underline;
+    color: $light-theme-link-color;
+    text-shadow: -1px -1px 0 $white,
+    1px -1px 0 $white,
+    -1px 1px 0 $white,
+    1px 1px 0 $white;
+    &:visited {
+      text-decoration: underline;
+      color: $light-theme-link-color;
+      text-shadow: -1px -1px 0 $white,
+      1px -1px 0 $white,
+      -1px 1px 0 $white,
+      1px 1px 0 $white;
+    }
+    &:hover {
+      color: lighten($light-theme-link-color, 10%);
+    }
+  }
+  p & {
+    display: inline;
+    padding: 0;
+  }
+}
+
+// Lists
+ul, ol {
+  margin: $paragraph-margin 0 0 20px;
+
+  li {
+    line-height: $paragraph-line-height;
+    margin-top: 10px;
+    color: $paragraph-color;
+  }
+
+  ul, ol {
+    margin-top: 0;
+  }
+}
+
+ul {
+  li {
+    list-style: disc;
+  }
+
+  ul {
+    li {
+      list-style: circle;
+    }
+  }
+}
+
+ol {
+  li {
+    list-style: decimal;
+  }
+}
+
+// hr
+hr {
+  height: 1px;
+  margin: $hr-margin 0;
+  border: none;
+  background-color: $border-color;
+}
+
+// Blockquote
+blockquote {
+  font-size: $blockquote-size;
+  font-style: italic;
+  line-height: $blockquote-line-height;
+  margin: $blockquote-margin 0;
+  text-align: center;
+  color: $blockquote-color;
+}
+
+// Tables
+table {
+  width: 100%;
+  margin: $blockquote-margin 0;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  text-align: left;
+  border: 1px solid $border-color;
+}
+
+th {
+  font-weight: $font-weight-bold;
+}
+
+th, td {
+  padding: 15px;
+}
+
+// Figure
+figure {
+  margin: $blockquote-margin 0;
+
+  img {
+    margin: 0;
+  }
+}
+
+figcaption {
+  font-size: $paragraph-margin * 0.8;
+  margin-top: 10px;
+  color: lighten($paragraph-color, 10%);
+}
+
+// Code
+pre {
+  display: block;
+  overflow: auto;
+  margin: 0 0 40px 0;
+  padding: 20px;
+  border: 1px solid $border-color;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: lighten($border-color, 12%);
+  code {
+    line-height: 1.5em;
+    position: static;
+    padding: 0;
+    border: none;
+  }
+}
+
+code {
+  font-family: Courier New, Courier, monospace;
+  font-size: $paragraph-size / 1.4;
+  line-height: 1em;
+  position: relative;
+  top: -0.2em;
+  padding: 3px;
+  pointer-events: none;
+  color: darken($border-color, 40%);
+  border: 1px solid $border-color;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+// Misc Styles
+em, i, .italic {
+  font-style: italic;
+}
+
+strong, b, .bold {
+  font-weight: $font-weight-bold;
+}
+.align-right {
+  text-align: left;
+
+  @include sm {
+    text-align: right;
+  }
+}

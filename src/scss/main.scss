@@ -1,0 +1,59 @@
+@import "modules/normalize";
+@import "modules/variables";
+@import "modules/mixins";
+
+// @import 'vendor/sierra/sierra';
+@import "vendor/bulma/bulma";
+
+@import "partials/grid";
+@import "partials/typography";
+
+@import "components/nav";
+@import "components/icons";
+@import "components/projects-list";
+@import "components/experiments-list";
+
+body {
+  background: $white;
+}
+main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: #222;
+
+  @include tablet {
+    position: fixed;
+    border: 1em solid $white;
+  }
+  &.light {
+    border-color: $gray100;
+    background: $white;
+  }
+  &.home {
+    overflow-y: hidden;
+    background-image: url("/build/hello.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 75%;
+  }
+  &.projects-list {
+    background-image: url("/build/work.svg");
+    background-repeat: no-repeat;
+    background-position: 110% bottom;
+    background-size: 75%;
+  }
+  &.experiments-list {
+    background-image: url("/build/science.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 75%;
+  }
+}

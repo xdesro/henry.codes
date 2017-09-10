@@ -1,0 +1,36 @@
+{{ partial "header" . }}
+<!-- {{ partial "nav" . }} -->
+{{ range $index, $element := .Data.Pages }}
+<section class="hero is-fullheight is-medium-mobile">
+    {{ if eq $index 0 }}
+    <div class="hero-head">
+        {{ partial "nav" . }}
+    </div>
+    {{ end }}
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns single-project">
+                <a href="{{ .Permalink }}" class="single-item-wrapper"></a>
+                <div class="column">
+                    <figure class="image">
+                        <img class="featured-image-back" src="{{ .Params.featured_image_1 }}" alt="">
+                    </figure>
+                </div>
+                <div class="column single-item-description" id="{{ lower .Title }}">
+                    <h2 class="project-list-title">
+                    {{ .Title }}<small class="project-date">{{ dateFormat "January 2006" .Date }}</small>
+                    </h2>
+                    <ul class="single-item-tooling">
+                        {{ range .Params.tags }}
+                        <li>
+                            <div class="icon-{{ . }}"></div>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ partial "footer" . }}

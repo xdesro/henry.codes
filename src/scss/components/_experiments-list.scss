@@ -1,0 +1,35 @@
+.experiments-list {
+  margin: 0 auto;
+  list-style-type: none;
+  li {
+    display: block;
+  }
+}
+.experiment-wrapper {
+  z-index: 1;
+  display: flex;
+  padding: 1rem 0;
+  transition: all 0.1s ease;
+  transform: scale(1.0);
+  background: black;
+  background-size: cover;
+  &:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: rgba(0,0,0,0.5);
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.experiment-card {
+  padding: 1rem;
+  h3 {
+    margin: 0;
+  }
+}

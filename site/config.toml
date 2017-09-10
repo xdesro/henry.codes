@@ -1,0 +1,30 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "My new Victor-Hugo site"
+sectionPagesMenu = "main"
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS"]
+
+[taxonomies]
+    tag = "tags"
+
+[[menu.nav]]
+    name = "about"
+    identifier = "index"
+    url = "/"
+    weight = 1
+[[menu.nav]]
+    name = "projects"
+    identifier = "projects"
+    url = "/projects/"
+    weight = 2
+[[menu.nav]]
+    name = "experiments"
+    identifier = "experiments"
+    url = "/experiments/"
+    weight = 3
+

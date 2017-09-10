@@ -1,0 +1,25 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<section class="hero">
+    <div class="container">
+        <div class="column is-10 is-offset-1">
+            <h1>{{ .Title }}</h1>
+            <p>These are just ideas or sketches that never quite made it to “project” status. Typically stuff like unboxing a new JS library, finding a code challenge, or designing smaller UI elements.</p>
+        </div>
+    <div class="column is-10 is-offset-1">
+        <ul class="experiments-list">
+            {{ range .Data.Pages }}
+            <li>
+                <a href="{{ if .Params.external_link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}" class="experiment-wrapper" style="background-image:url('{{ .Params.featured_image }}')">
+                    <div class="experiment-card">
+                        <p class="experiment-date">{{ lower (dateFormat "2 January 2006" .Date) }}</p>
+                        <h3 class="experiment-title">{{ .Title }}</h3>
+                    </div>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+</section>
+{{ partial "footer" . }}

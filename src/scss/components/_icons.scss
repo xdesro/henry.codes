@@ -1,0 +1,139 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: $iconfont !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:after {
+    display: none;
+  }
+}
+
+.social-icons {
+  margin: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    padding-right: 2rem;
+  }
+  a {
+    position: relative;
+    overflow: hidden;
+  }
+}
+.icon-link {
+  transition: all 0.2s ease;
+  &:hover {
+    &.icon-github {
+      &:before {
+        color: #181717;
+      }
+    }
+    &.icon-gmail {
+      &:before {
+        color: #D14836;
+      }
+    }
+    &.icon-instagram {
+      &:before {
+        color: #E4405F;
+      }
+    }
+    &.icon-linkedin {
+      &:before {
+        color: #0077B5;
+      }
+    }
+    &.icon-stackoverflow {
+      &:before {
+        color: #FE7A16;
+      }
+    }
+    &.icon-twitter {
+      &:before {
+        color: #1DA1F2;
+      }
+    }
+  }
+}
+.icon-adobe {
+  &:before {
+    content: "\e900";
+  }
+}
+.icon-contentful {
+  &:before {
+    content: "\e901";
+  }
+}
+.icon-css3 {
+  &:before {
+    content: "\e902";
+  }
+}
+.icon-drupal {
+  &:before {
+    content: "\e903";
+  }
+}
+.icon-github {
+  &:before {
+    content: "\e904";
+  }
+}
+.icon-gmail {
+  &:before {
+    content: "\e905";
+  }
+}
+.icon-hexo {
+  &:before {
+    content: "\e906";
+  }
+}
+.icon-instagram {
+  &:before {
+    content: "\e907";
+  }
+}
+.icon-javascript {
+  &:before {
+    content: "\e908";
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: "\e909";
+  }
+}
+.icon-netlify {
+  &:before {
+    content: "\e90a";
+  }
+}
+.icon-sass {
+  &:before {
+    content: "\e90b";
+  }
+}
+.icon-sketch {
+  color: #D8D8D8;
+  &:before {
+    content: "\e90c";
+  }
+}
+.icon-stackoverflow {
+  &:before {
+    content: "\e90d";
+  }
+}
+.icon-twitter {
+  &:before {
+    content: "\e90e";
+  }
+}
