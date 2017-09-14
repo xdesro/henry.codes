@@ -13,7 +13,11 @@
     display: none;
   }
 }
-
+.icons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .social-icons {
   margin: 0;
   list-style-type: none;
