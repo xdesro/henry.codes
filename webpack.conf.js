@@ -23,7 +23,11 @@ export default {
     new webpack.ProvidePlugin({
       "fetch": "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
     }),
-    new UglifyJSPlugin()
+    new UglifyJSPlugin({
+      output: {
+        comments: false
+      }
+    })
   ],
 
   context: path.join(__dirname, "src"),
