@@ -11,15 +11,23 @@
         <meta name="apple-mobile-web-app-title" content="henry.codes">
         <meta name="application-name" content="henry.codes">
         <meta name="theme-color" content="#222222" />
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92721708-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', 'UA-92721708-1');
+        </script>
         <base href="{{ $.Site.BaseURL }}">
         <title>{{ $.Site.Title }} | {{ humanize .Page.Title }} </title>
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body id="barba-wrapper">
-        <main class="barba-container 
+        <main class="barba-container
             {{ if and .IsPage (eq .Type "projects") }}light{{ end }}
             {{ if .IsHome }}home{{ end }}
             {{ if and .IsNode (eq .Type "projects" ) }}projects-list{{ end }}
             {{ if and .IsNode (eq .Type "experiments" ) }}experiments-list{{ end }}
-        " >
+            " >
             <div id="wipe"></div>
