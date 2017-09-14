@@ -29,6 +29,7 @@
     "eslint-plugin-import": "^1.11.1",
     "exports-loader": "^0.6.3",
     "file-loader": "^0.11.1",
+    "gsap": "^1.20.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^6.1.2",
@@ -41,6 +42,7 @@
     "jquery": "^3.2.1",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^10.0.0",
+    "scrollmagic": "^2.0.5",
     "url-loader": "^0.5.7",
     "webpack": "^2.6.0",
     "whatwg-fetch": "^1.0.0"
