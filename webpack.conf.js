@@ -1,5 +1,6 @@
 import webpack from "webpack";
 import path from "path";
+import UglifyJSPlugin from "uglifyjs-webpack-plugin";
 
 export default {
   module: {
@@ -21,7 +22,8 @@ export default {
   plugins: [
     new webpack.ProvidePlugin({
       "fetch": "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
-    })
+    }),
+    new UglifyJSPlugin()
   ],
 
   context: path.join(__dirname, "src"),
