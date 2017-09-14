@@ -38,11 +38,13 @@ main {
     background: $white;
   }
   &.home {
-    overflow-y: hidden;
     background-image: url("/build/hello.svg");
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 75%;
+    @include sm {
+      overflow-y: hidden;
+    }
   }
   &.projects-list {
     background-image: url("/build/work.svg");
