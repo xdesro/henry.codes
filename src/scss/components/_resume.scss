@@ -1,0 +1,51 @@
+.resume-title {
+  font-size: 3rem;
+  letter-spacing: 0;
+  margin:0 auto;
+  @include sm {
+    font-size: 3.8rem;
+  }
+}
+.resume-subtitle {
+  text-transform: none;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  include sm {
+    font-size: 2rem;
+  }
+}
+.resume-details {
+  display:flex;
+  flex-direction: column;
+  @include sm {
+    line-height: 2.1rem;
+  }
+}
+.resume-section-title {
+  font-family: PlayfairDisplay-BlackItalic;
+  font-size: 2rem;
+  color: #555555;
+}
+.role-logo {
+  max-width: 12rem;
+  filter: grayscale(1);
+  &.logo-background {
+    background: #222;
+    padding: 0.5rem;  
+  }
+}
+.role-title {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  letter-spacing: 1rem;
+}
+.role-dates {
+font-size: 1rem;
+color: #979797;
+letter-spacing: 0.5rem;
+line-height: 2rem
+}
+.role-description {
+  line-height: 2rem;
+}
