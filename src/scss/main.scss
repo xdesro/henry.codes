@@ -61,3 +61,29 @@ main {
     background-size: 75%;
   }
 }
+
+#container-404 {
+  p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+}
+#header-404 {
+  font-family: PlayfairDisplay-BlackItalic;
+  font-size: 30vw;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-top: -20vw;
+  text-align: center;
+  letter-spacing: -2vw;
+  color: #111;
+  + h2 {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
