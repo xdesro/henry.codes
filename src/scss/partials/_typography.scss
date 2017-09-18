@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900,900i');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:900,900i");
 
 @font-face {
   font-family: "Futura";
@@ -164,9 +164,10 @@ p {
 
 // Links
 a {
+  position: relative;
   text-decoration: none;
   color: $link-color;
-  position: relative;
+
   @include transition(all 0.2s ease);
 
   &:hover {
