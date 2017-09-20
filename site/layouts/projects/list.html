@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 <!-- {{ partial "nav" . }} -->
 {{ range $index, $element := .Data.Pages }}
-<section class="hero is-fullheight is-medium-mobile">
+<section class="hero is-fullheight is-medium-mobile" id="{{ lower .Title }}-project">
     {{ if eq $index 0 }}
     <div class="hero-head">
         {{ partial "nav" . }}
