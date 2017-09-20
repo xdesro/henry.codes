@@ -1,4 +1,8 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
+<section class="section">
+  <div class="container"><p><a href="/{{.Section}}" class="button">← go back</a></p></div>
+</section>
+
 {{ .Content }}
 {{ partial "footer" . }}
