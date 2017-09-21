@@ -1,8 +1,10 @@
 .navbar-end {
-  justify-content: space-around;
   display: flex;
+
+  justify-content: space-around;
   @include tablet {
     margin-left: auto;
+
     justify-content: flex-end;
     align-items: stretch;
   }
@@ -11,6 +13,7 @@
   position: relative;
   display: inline-block;
   margin: 0 auto;
+
   @include sm {
     margin: 0 0.5rem;
   }

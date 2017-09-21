@@ -1,7 +1,10 @@
 // JS Goes here - ES6 supported
 import $ from 'jquery';
 import Barba from 'barba.js';
-import {TweenMax, Power2, TimelineMax} from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'gsap';
 
 Barba.Pjax.start();
 Barba.Prefetch.init();
