@@ -130,12 +130,11 @@
   padding-top: 10vh;
 }
 .featured-image {
-  position: absolute;
-
   @extend .is-shadowed;
 
   .floating-angle & {
     @include sm {
+      position: absolute;
       z-index: 1;
       left: 0;
       width: 60%;
@@ -160,6 +159,7 @@
     }
   }
   .floating-pyramid & {
+    position: absolute;
     width: 60%;
 
     @include sm {
