@@ -6,6 +6,7 @@ import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import cssImport from 'postcss-import';
 import cssnext from 'postcss-cssnext';
+import imagemin from 'gulp-imagemin';
 import BrowserSync from 'browser-sync';
 import webpack from 'webpack';
 import webpackConfig from './webpack.conf';
@@ -25,7 +26,7 @@ gulp.task('hugo', (cb) => buildSite(cb));
 gulp.task('hugo-preview', (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task('build', ['sass', 'fonts', 'js'], (cb) => buildSite(cb, [], 'production'));
+gulp.task('build', ['images', 'sass', 'fonts', 'js'], (cb) => buildSite(cb, [], 'production'));
 gulp.task('build-preview', ['sass', 'js'], (cb) => buildSite(cb, hugoArgsPreview, 'production'));
 
 // Compile CSS with PostCSS
@@ -39,6 +40,11 @@ gulp.task('sass', () => (
     .pipe(browserSync.stream())
 ));
 
+gulp.task('images', () => {
+  gulp.src('./site/static/img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('./site/static/img'))
+})
 // Move fonts
 gulp.task('fonts', () => {
   return gulp.src(fontsPath)
