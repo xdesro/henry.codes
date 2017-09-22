@@ -15,7 +15,8 @@ import csscomb from 'gulp-csscomb';
 const browserSync = BrowserSync.create();
 
 const stylePath = ['./src/scss/*.scss','./src/scss/**/*.scss'],
-      fontsPath = './src/fonts/**/*';
+      fontsPath = './src/fonts/**/*',
+      imgPath = ['./site/static/img/*', './site/static/img/**/*'];
 
 // Hugo arguments
 const hugoArgsDefault = ['-d', '../dist', '-s', 'site', '-v'];
@@ -41,7 +42,7 @@ gulp.task('sass', () => (
 ));
 
 gulp.task('images', () => {
-  gulp.src('./site/static/img/*')
+  gulp.src('')
   .pipe(imagemin())
   .pipe(gulp.dest('./site/static/img'))
 })
