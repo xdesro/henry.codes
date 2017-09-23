@@ -131,7 +131,6 @@
 }
 .featured-image {
   @extend .is-shadowed;
-
   .floating-angle & {
     @include sm {
       position: absolute;

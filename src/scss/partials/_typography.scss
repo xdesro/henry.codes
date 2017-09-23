@@ -192,6 +192,16 @@ a {
       color: lighten($light-theme-link-color, 10%);
     }
   }
+  &.has-arrow-after {
+    &:after {
+      content: " →";
+    }
+  }
+  &.has-arrow-before {
+    &:before {
+      content: "← ";
+    }
+  }
   p & {
     display: inline;
     padding: 0;
