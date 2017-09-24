@@ -14,7 +14,13 @@
 @import "components/experiments-list";
 @import "components/resume";
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
 body {
+  overflow: scroll;
+  height: 100%;
   background: $white;
 }
 main {
