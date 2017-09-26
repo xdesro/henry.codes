@@ -148,6 +148,7 @@
       }
       &:nth-of-type(2) {
         transform: matrix3d(0.94,0,0.34,0.0002,0.00,1,0.00,0,-0.34,0,0.94,0,0,0,6,1) translateX(-30px) scale(0.95);
+        filter: blur(2px) brightness(95%);
       }
     }
   }
