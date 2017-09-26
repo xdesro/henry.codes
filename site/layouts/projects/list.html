@@ -13,7 +13,9 @@
                 <a href="{{ .Permalink }}" class="single-item-wrapper"></a>
                 <div class="column">
                     <figure class="image">
-                        <img class="featured-image-back" src="{{ .Params.featured_image_1 }}" alt="">
+                        {{ range .Params.featured_image }}
+                        <img class="list-featured-image" src="{{ . }}" alt="">
+                        {{ end }}
                     </figure>
                 </div>
                 <div class="column single-item-description" id="{{ lower .Title }}">
