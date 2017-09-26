@@ -180,11 +180,8 @@
 }
 .floating-image-wrapper {
   position: relative;
-  min-height: 50vh;
-  padding-top: 10vh;
-
   @include sm {
-    margin-bottom: 10%;
+    min-height: 100vh;
   }
 }
 .featured-image {
@@ -218,7 +215,6 @@
   .floating-pyramid & {
     position: absolute;
     width: 60%;
-
     @include sm {
       width: 30%;
       animation: float 4s ease-in-out infinite;
@@ -259,8 +255,10 @@
     &:nth-of-type(3) {
       top: 15%;
       right: 0;
-
       filter: blur(2px) brightness(97%);
     }
   }
+}
+#initiative-icons {
+  padding: 1rem 30% 1rem 0;
 }
