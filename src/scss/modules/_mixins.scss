@@ -13,12 +13,6 @@
 }
 
 @mixin sm {
-  @media screen and (min-width: $screen-xs-min) {
-    @content;
-  }
-}
-
-@mixin sm {
   @media screen and (min-width: $screen-sm-min) {
     @content;
   }
