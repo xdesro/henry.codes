@@ -1,4 +1,6 @@
-// JS Goes here - ES6 supported
+const consoleStyles = ["background: linear-gradient(135deg, rgba(255, 0, 150, 1) 0%,rgba(255, 150, 0, 1) 100%);", "color: white", "padding: 10px 20px", "line-height: 35px", "font-family: sans-serif"].join(";");
+console.log("%ccoded in 2017 by Henry Desroches // henry.codes", consoleStyles)
+
 import $ from 'jquery';
 import Barba from 'barba.js';
 import ScrollMagic from 'scrollmagic';
